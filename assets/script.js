@@ -10,7 +10,6 @@ let Interval;
 let listaMarcacoes = document.querySelector(".marcacoes")
 let numeracao = document.querySelector(".num")
 let tempoMarcado = document.querySelector(".tempoMarcado")
-let diferecaTempo = document.querySelector(".diferencaTempo")
 
 window.onload = function() {
     let minutos = 00;
@@ -62,15 +61,14 @@ window.onload = function() {
 
     botaoReiniciar.onclick = function() {
         clearInterval(Interval);
-        milisegundos = "00";
-        segundos = "00";
-        minutos = "00";
-        adMiliseg.innerHTML = milisegundos;
-        adSegundos.innerHTML = segundos;
-        adMinutos.innerHTML = minutos;
+        milisegundos = 00;
+        segundos = 00;
+        minutos = 00;
+        adMiliseg.innerHTML = "0" + milisegundos;
+        adSegundos.innerHTML = "0" + segundos;
+        adMinutos.innerHTML = "0" + minutos;
 
         num = 00;
-        tempoMarcado.innerHTML = `${minutos} : ${segundos} : ${milisegundos}`;
 
         botaoIniciar.innerHTML = "Iniciar";
         listaMarcacoes.style.display = "none";
