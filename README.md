@@ -39,7 +39,9 @@ Este projeto foi desenvolvido com o objetivo de praticar JavaScript. Ele consist
 
 Veja o resultado no link abaixo!
 
-https://nathimt.github.io/projeto_cronometro/
+<a href="https://nathimt.github.io/projeto_cronometro/" target="_blank">
+	https://nathimt.github.io/projeto_cronometro/
+</a>
 
 ## 🛠 Tecnologias
 
